@@ -6,10 +6,10 @@ A Flask application for exploring student performance predictions, with a saved 
 
     app.py                          Flask application entry point
     templates/index.html            Web interface
-    notebook/SPP.ipynb              Model development notebook
-    DATABASE/                       Project data
-    gradient_boosting_model.pkl     Saved model artifact
-    scaler.pkl                      Saved preprocessing artifact
+    notebooks/model_training.ipynb              Model development notebook
+    data/                       Project data
+    models/gradient_boosting_model.pkl     Saved model artifact
+    models/scaler.pkl                      Saved preprocessing artifact
     render.yaml                     Deployment configuration
     requirements.txt                Python dependencies
 
@@ -37,7 +37,7 @@ Open the local address printed by Flask.
 
 ## Model artifacts and data
 
-The application expects the model and scaler files in the repository root. Keep these artifacts paired with the preprocessing and prediction code that produced them. The notebook and data file document the project workflow.
+The application expects the model and scaler files in the models directory. Keep these artifacts paired with the preprocessing and prediction code that produced them. The notebook and data file document the project workflow.
 
 ## Notes
 
