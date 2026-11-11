@@ -7,8 +7,8 @@ app = Flask(__name__)
 import pandas as pd
 
 
-model = joblib.load('gradient_boosting_model.pkl')
-scaler = joblib.load('scaler.pkl')
+model = joblib.load(os.path.join(os.path.dirname(__file__), "models", "gradient_boosting_model.pkl"))
+scaler = joblib.load(os.path.join(os.path.dirname(__file__), "models", "scaler.pkl"))
 
 
 
